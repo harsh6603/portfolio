@@ -1,0 +1,120 @@
+.n-wrapper {
+  position: fixed;
+  background-color: white;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
+  z-index: 1;
+  margin-left: -69px;
+  padding: 0 3%;
+  width: 100%;
+  box-shadow: 0px 0px 20px 0px rgb(78 78 78 / 20%);
+}
+
+.n-left {
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  gap: 2rem;
+}
+
+.n-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.n-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
+.n-list {
+  flex: 10;
+  padding-top: 1.2rem;
+}
+
+.n-list>ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+}
+
+.n-list>ul :hover {
+  color: rgb(62, 132, 255);
+  cursor: pointer;
+}
+
+.n-button {
+  flex: 2;
+}
+
+@media screen and (max-width: 500px) {
+  .n-wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    margin-left: -20px;
+    padding: 0 5%;
+    width: 99%;
+    box-shadow: 0px 0px 20px 0px rgba(78, 78, 78, 0.2);
+  }
+
+  .n-list {
+    flex: 10 1;
+    background-color: white;
+    height: 40%;
+    transition: height 0.1s;
+  }
+
+  .n-list-hide {
+    flex: 10 1;
+    background-color: white;
+    height: 0;
+    transition: height 0.3s;
+  }
+
+  .n-list>ul {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 0;
+    padding: 0;
+    padding-left: 35%;
+    display: flex;
+    transition: display 0.5s;
+  }
+
+  .n-list-hide>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 0;
+    padding: 10% 0;
+    padding-left: 35%;
+    display: none;
+    transition: display 0.3s;
+  }
+
+  .modalForNavbar {
+    display: none;
+    z-index: 1;
+    left: 0px;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.22);
+  }
+}

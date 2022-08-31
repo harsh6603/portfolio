@@ -1,0 +1,54 @@
+.footer {
+  display: flex;
+  align-items: center;
+  margin: -0.5rem -3.5rem;
+  position: relative;
+  margin-top: -7rem;
+}
+.f-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4rem;
+  gap: 1rem;
+  color: white;
+}
+.f-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.f-icons .fa-github{
+  font-size: 40px;
+  color: white;
+}
+
+.f-icons .fa-linkedin{
+  font-size: 40px;
+  color: white;
+}
+
+.f-icons .fa-whatsapp{
+  font-size: 40px;
+  color: white;
+}
+
+@media screen and (max-width: 480px){
+
+  .footer {
+    display: flex;
+    align-items: center;
+    margin: -0.5rem -3.5rem;
+    position: relative;
+    margin-top: -2rem;
+    padding-top: 0;
+    height: 33vh;
+  }
+
+  .f-content{
+    transform: scale(.5);
+  }
+}

@@ -1,0 +1,96 @@
+.services {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  height: 30rem;
+  margin-bottom: 8rem;
+  margin-top: 9rem;
+  margin-bottom: 10rem;
+  /* scroll view */
+  padding-top: 15%;
+}
+
+/* left side */
+.awesome {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* gap: 20px; */
+}
+
+.awesome> :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.awesome> :nth-child(2) {
+  color: rgb(62 132 255);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* .awesome> :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+} */
+
+.s-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+/* right sided */
+.cards {
+  position: relative;
+}
+
+.cards>* {
+  position: absolute;
+}
+
+.dtyleDiv {
+  padding: 5%;
+  padding-top: 8%;
+  width: 50%;
+}
+
+/* blur */
+.s-blur2 {
+  left: 14rem;
+  top: 8rem;
+}
+
+.s-blur1 {
+  top: 13rem;
+  left: -18rem;
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 30rem;
+    padding: 0%;
+    padding-top: 32%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem;
+  }
+
+  .cards>* {
+    position: static;
+  }
+
+  .dtyleDiv {
+    padding: 0%;
+    margin-left: -26%;
+    width: 120%;
+  }
+}
