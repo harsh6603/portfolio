@@ -1,10 +1,6 @@
 import React from "react";
 import { useContext } from "react";
 import "./Footer.css";
-import Wave from "../../img/wave.png";
-import Insta from "@iconscout/react-unicons/icons/uil-instagram";
-import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
-import Gitub from "@iconscout/react-unicons/icons/uil-github";
 import { themeContext } from "../../Context";
 const Footer = () => {
 
@@ -23,13 +19,13 @@ const Footer = () => {
       {/* <img src={Wave} alt="" style={{ width: "100%" }} /> */}
       <div className="f-content">
         <div className="f-icons">
-          <a target={"_blank"} href="https://github.com/harsh6603">
+          <a target={"_blank"} rel="noreferrer" href="https://github.com/harsh6603">
             <i className="fa-brands fa-github" style={{color:(darkMode)?"white":"black"}}></i>
           </a>
-          <a target={"_blank"} href="https://www.linkedin.com/in/harsh-thakkar-79101b217/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B%2BgWU5NPUQKmesp3JImWY9g%3D%3D">
+          <a target={"_blank"} rel="noreferrer"  href="https://www.linkedin.com/in/harsh-thakkar-79101b217/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B%2BgWU5NPUQKmesp3JImWY9g%3D%3D">
             <i className="fa fa-linkedin" style={{color:(darkMode)?"white":"black"}}></i>
           </a>
-          <a href="">
+          <a href="/">
             <i className="fa fa-whatsapp" style={{color:(darkMode)?"white":"black"}}></i>
           </a>
           {/* <Insta color="white" size={"3rem"} />

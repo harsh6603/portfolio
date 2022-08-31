@@ -16,12 +16,6 @@ const Services = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
-  // transition
-  const transition = {
-    duration: 1,
-    type: "spring",
-  };
-
   const labels = ["HTML", "CSS", "Javascript", "ReactJS"];
   const fData = [65, 70, 80, 81];
 

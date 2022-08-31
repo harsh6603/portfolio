@@ -1,14 +1,7 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
 import alian from "../../img/alian_software.webp"
-import { motion } from "framer-motion";
-import { Link } from 'react-scroll'
 import Certificate from "./internship_certificate.pdf";
 
 const Works = () => {
@@ -39,8 +32,8 @@ const Works = () => {
           <div className="d-flex justify-content-start">
             <button className="button duration">1 June 2022 to 30 Jun 2022</button>
 
-            <a style={{textDecoration:"none"}} target={"_blank"} href={Certificate} className="button certificate mx-2" download>
-              <i class="fa fa-file-text"></i>
+            <a style={{textDecoration:"none"}} target={"_blank"} rel="noreferrer" href={Certificate} className="button certificate mx-2" download>
+              <i className="fa fa-file-text"></i>
               <small>Certificate</small>
             </a>
           </div>

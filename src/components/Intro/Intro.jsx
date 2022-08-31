@@ -1,10 +1,6 @@
 import React, { useContext } from "react";
 import "./Intro.css";
-import Github from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
-import { Link } from "react-scroll";
 import coder from "../../front-end-image.png"
 import Resume from './resume.pdf';
 
@@ -34,13 +30,13 @@ const Intro = () => {
         </a> 
         {/* social icons */}
         <div className="i-icons">
-          <a target={"_blank"} href="https://github.com/harsh6603">
+          <a target={"_blank"} rel="noreferrer" href="https://github.com/harsh6603">
             <i className="fa-brands fa-github"></i>
           </a>
-          <a target={"_blank"} href="https://www.linkedin.com/in/harsh-thakkar-79101b217/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B%2BgWU5NPUQKmesp3JImWY9g%3D%3D">
+          <a target={"_blank"} rel="noreferrer" href="https://www.linkedin.com/in/harsh-thakkar-79101b217/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B%2BgWU5NPUQKmesp3JImWY9g%3D%3D">
             <i className="fa fa-linkedin" aria-hidden="true"></i>
           </a>
-          <a href="">
+          <a href="/">
             <i className="fa fa-whatsapp" aria-hidden="true"></i>
           </a>
           {/* <img src={Github} alt="" /> */}
